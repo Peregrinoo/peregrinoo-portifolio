@@ -1,0 +1,37 @@
+@keyframes dropAndUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.drop-and-up {
+    animation: dropAndUp 1s ease-out forwards;
+    opacity: 0; /* Inicialmente invisível, depois que animação acabar fica visível */
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+/* Animação para subir e descer constantemente a setinha */
+@keyframes bobbingAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.animated-arrow {
+    position: absolute;
+    bottom: 20px;   /* coloca a seta no final da tela */
+    left: 50%;      /* centraliza horizontalmente */
+    transform: translateX(-50%);
+    animation: bobbingAnimation 5s ease-in-out infinite;
+}

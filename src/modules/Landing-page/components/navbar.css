@@ -1,0 +1,37 @@
+.navbar-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--mantine-color-body);
+
+}
+
+.navbar-inner {
+    max-width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center; /* Centraliza os links ao meio */
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-link:hover {
+    color: var(--mantine-color-teal-6); /* cor teal em hover */
+}
+
+.navbar-placeholder {
+    width: 122px; /* mesmo tamanho aproximado dos botões para centralização completa */
+}
