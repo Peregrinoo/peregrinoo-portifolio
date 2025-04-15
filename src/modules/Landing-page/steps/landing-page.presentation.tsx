@@ -20,7 +20,6 @@ export default function LandingPagePresentation() {
         { label: "Designer UI/UX", icon: IconPalette, color: "teal" },
         { label: "Frontend", icon: IconCode, color: "teal" },
         { label: "Backend", icon: IconServer, color: "teal" },
-        { label: "Machine Learning", icon: IconBrain, color: "teal" },
     ];
 
     return (

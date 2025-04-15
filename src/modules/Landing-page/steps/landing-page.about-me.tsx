@@ -58,7 +58,7 @@ export default function LandingPageAboutMe() {
                             marginBottom: "1rem",
                         }}
                     >
-                        Meu nome é Gabriel Chaves, nasci e me criei em Ceará, Fortaleza. Desde muito novo desenvolvi uma paixão por computação, paixão pela qual fez com que eu me aventurasse em vários meios, desde diagramação de websites até desenvolvimento de modelos de inteligência artificial complexas. Sou apaixonado pelo o que eu faço {"<3"}
+                        Meu nome é Gabriel Chaves, nasci e me criei em Ceará, Fortaleza. Desde muito novo desenvolvi uma paixão por computação, paixão pela qual fez com que eu me aventurasse em vários meios, desde diagramação de websites até desenvolvimento de sistemas complexos. Sou completamente apaixonado pelo o que eu faço
                     </Text>
 
                     <Divider my="sm" color={dark ? "#444" : "#ccc"} w={"100%"} />
