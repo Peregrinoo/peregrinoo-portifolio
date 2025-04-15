@@ -12,8 +12,8 @@ export default function LandingPageRecommendations() {
     const recommendations = [
         {
             image: "/recommendations/tiago_fachanha.png",
-            name: "Tiago Façanha dos Santos",
-            title: "Doutor em Teleinformática e Pesquisador no LIT-IFCE",
+            name: "Teste",
+            title: "Teste",
             recommendation: "Caba bom, pode contratar :)"
         },
     ];
