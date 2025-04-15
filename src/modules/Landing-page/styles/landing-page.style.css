@@ -29,7 +29,8 @@
 }
 
 .animated-arrow {
-    position: absolute;
+    position: relative;
+    padding-top: 20px;
     bottom: 20px;   /* coloca a seta no final da tela */
     left: 50%;      /* centraliza horizontalmente */
     transform: translateX(-50%);

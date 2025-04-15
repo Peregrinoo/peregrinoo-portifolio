@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import perfil from "../../../../public/perfil.jpeg";
-import { Paper, Container, Title, Flex, Badge } from "@mantine/core";
+import {Paper, Container, Title, Flex, Badge, Group} from "@mantine/core";
 import {
     IconPalette,
     IconCode,
@@ -35,6 +35,7 @@ export default function LandingPagePresentation() {
                 justifyContent: "center",
                 padding: "2rem",
                 transition: "background-color 0.3s ease",
+                flexDirection: "column"
             }}
         >
             <Container style={{ maxWidth: 1200 }}>
@@ -124,13 +125,13 @@ export default function LandingPagePresentation() {
                         </Flex>
                     </Flex>
                 </Flex>
+
+                {/* Setinha animada */}
+                <Group className="animated-arrow">
+                    <IconChevronDown size={48} color={dark ? "#aaa" : "#555"} />
+                </Group>
+
             </Container>
-
-            {/* Setinha animada */}
-            <div className="animated-arrow">
-                <IconChevronDown size={48} color={dark ? "#aaa" : "#555"} />
-            </div>
-
 
         </Paper>
     );
