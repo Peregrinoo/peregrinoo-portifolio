@@ -7,7 +7,7 @@ import {
     IconPalette,
     IconCode,
     IconServer,
-    IconBrain, IconChevronDown,
+    IconChevronDown,
 } from "@tabler/icons-react";
 import { useMantineColorScheme } from "@mantine/core";
 import { TypeAnimation } from 'react-type-animation';
