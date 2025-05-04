@@ -1,0 +1,80 @@
+{
+  "navbar": {
+    "about_me": "About Me",
+    "my_projects": "My Projects",
+    "recommendations": "Recommendations",
+    "contact_me": "Contact Me"
+  },
+  "landing_page": {
+    "presentation": {
+      "title": "Gabriel Chaves",
+      "description": [
+        "Software Engineer and Researcher at LIT-IFCE",
+        "More than an engineer.",
+        "More than a developer.",
+        "An artist in every line of code."
+      ]
+    },
+    "about_me": {
+      "title": "About Me",
+      "description": "My name is Gabriel Chaves, I was born and raised in Fortaleza, Ceará. From an early age, I developed a passion for computing, a passion that led me to explore various fields, from web page design to developing complex artificial intelligence models. I am passionate about what I do <3",
+      "skills_title": "Technical Skills",
+      "skills": {
+        "Frontend": ["HTML", "CSS", "Javascript", "Typescript", "React", "NextJS", "Tailwind", "Mantine-UI", "Chakra-UI"],
+        "Backend": ["NestJS", "Springboot", "Docker"],
+        "Mobile": ["Flutter", "Flutter Web", "GetX", "Dart", "Kotlin", "Java", "C#"],
+        "Design UI/UX": ["Figma", "Adobe XD", "Adobe Photoshop", "Adobe Illustrator", "Sketch"]
+      }
+    },
+    "projects": {
+      "title": "My Projects",
+      "list": [
+        {
+          "title": "SGR",
+          "year": "2024 - 2025",
+          "description": "An innovative system for managing and monitoring energy meters. Complete development of frontend, backend, and LoRaWAN communication with microcontrollers, using React and Chakra-UI on the frontend, and NestJS with clean architecture on the backend.",
+          "tags": ["React", "Chakra-UI", "NestJS", "LoRaWAN"]
+        },
+        {
+          "title": "NTN",
+          "year": "2024 - 2025",
+          "description": "A system for monitoring via NTN (Non-Terrestrial Networks). Built a frontend with NextJS and Mantine-UI and a backend with NestJS following best practices and clean architecture, along with full integration with NTN networks.",
+          "tags": ["NextJS", "Mantine-UI", "NestJS", "NTN"]
+        },
+        {
+          "title": "IOB",
+          "year": "2023 - 2024",
+          "description": "A monitoring and management system for bovines. Worked as a volunteer developing the application's frontend using React, following the best industry practices.",
+          "tags": ["React", "Chakra-UI", "IoT"]
+        },
+        {
+          "title": "GAAV – Military Police",
+          "year": "2023 - 2024",
+          "description": "An application for generating and validating PDFs via GOV.BR, using Flutter and storing data with Firebase.",
+          "tags": ["Flutter", "Firebase"]
+        },
+        {
+          "title": "SINCRO",
+          "year": "2023 - 2025",
+          "description": "A system for silo management with data capture and display on a dashboard. Frontend built with Flutter Web and backend with Springboot.",
+          "tags": ["Flutter Web", "Springboot", "IoT"]
+        }
+      ]
+    },
+    "recommendations": {
+      "title": "Recommendations",
+      "list": [
+        {
+          "image": "/recommendations/tiago_fachanha.png",
+          "name": "Tiago Façanha dos Santos",
+          "title": "Doctor in Teleinformatics and Researcher at LIT-IFCE",
+          "recommendation": "Great professional, you can hire him :)"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Me",
+      "description": "I am open to new projects and opportunities. Feel free to reach out to me through the platforms below!"
+    }
+  }
+}

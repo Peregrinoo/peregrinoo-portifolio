@@ -4,6 +4,7 @@ import { MantineProvider, ColorSchemeScript } from '@mantine/core';
 import '@mantine/notifications/styles.css';
 import '@mantine/core/styles.css';
 import {Navbar} from "@/modules/Landing-page/components/navbar";
+import {TranslationProvider} from "@/hook/useTranslation";
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -29,10 +30,12 @@ export default function RootLayout({
             <ColorSchemeScript />
         </head>
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <MantineProvider>
-            <Navbar/>
-            {children}
-        </MantineProvider>
+        <TranslationProvider>
+            <MantineProvider>
+                <Navbar/>
+                {children}
+            </MantineProvider>
+        </TranslationProvider>
         </body>
         </html>
     );

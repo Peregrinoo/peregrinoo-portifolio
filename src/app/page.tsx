@@ -10,8 +10,7 @@ export default function Home() {
             <LandingPagePresentation />
             <LandingPageAboutMe />
             <LandingPageProjects />
-            <LandingPageRecommendations/>
-            <LandingPageContact/>\
+            <LandingPageContact/>
         </>
     )
 }

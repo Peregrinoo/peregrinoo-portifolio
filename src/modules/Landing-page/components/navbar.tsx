@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useTranslation } from '@/hook/useTranslation';
 import {
     Container,
     Group,
@@ -19,49 +19,38 @@ import './navbar.css';
 export function Navbar() {
     const { colorScheme, toggleColorScheme } = useMantineColorScheme();
     const dark = colorScheme === 'dark';
-    const [language, setLanguage] = useState('pt');
+    const { t, language, changeLanguage } = useTranslation();
     const [opened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
 
-    const links = ['Sobre mim', 'Meus projetos', 'Recomendações', 'Contate-me'];
+    const links = [
+        t('navbar.about_me'),
+        t('navbar.my_projects'),
+        t('navbar.recommendations'),
+        t('navbar.contact_me')
+    ];
 
-    const linksItems = links.map((link) => (
-        <a
-            key={link}
-            href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
-            className="navbar-link"
-            onClick={closeDrawer}
-        >
-            {link}
-        </a>
-    ));
+    const linksItems = (links as string[]).map((link, index) => {
+        return (
+            <a
+                key={index}
+                href={`#${link.toLowerCase().replace(/\s/g, '-')}`}
+                className="navbar-link"
+                onClick={closeDrawer}
+            >
+                {link}
+            </a>
+        );
+    });
 
     return (
         <header className="navbar-header">
             <Container className="navbar-inner">
                 <Flex align="center" justify="space-between" w="100%">
-
-                    <Group className="navbar-placeholder" visibleFrom="sm">
-
-                    </Group>
-
                     <Group className="navbar-links" visibleFrom="sm">
                         {linksItems}
                     </Group>
 
                     <Group visibleFrom="sm" style={{ paddingRight: '32px' }}>
-                        <Select
-                            data={[
-                                { value: 'en', label: 'EN 🇺🇸' },
-                                { value: 'pt', label: 'PT 🇧🇷' },
-                            ]}
-                            value={language}
-                            onChange={(val) => setLanguage(val || 'pt')}
-                            variant="filled"
-                            size="sm"
-                            style={{ width: '90px' }}
-                            color="teal"
-                        />
-
                         <ActionIcon
                             variant="outline"
                             color="teal"
@@ -81,7 +70,7 @@ export function Navbar() {
                 opened={opened}
                 onClose={closeDrawer}
                 size="80%"
-                title="Menu"
+                title={t('navbar.menuTitle')}
                 hiddenFrom="sm"
                 padding="md"
             >
@@ -95,23 +84,12 @@ export function Navbar() {
                                 { value: 'pt', label: 'PT 🇧🇷' },
                             ]}
                             value={language}
-                            onChange={(val) => setLanguage(val || 'pt')}
+                            onChange={(val) => changeLanguage(val as 'en' | 'pt')}
                             variant="filled"
                             size="md"
                             style={{ width: '100%', marginTop: 16 }}
                             color="teal"
                         />
-
-                        <ActionIcon
-                            variant="outline"
-                            color="teal"
-                            onClick={() => toggleColorScheme()}
-                            size="xl"
-                            aria-label="Toggle theme"
-                            style={{ width: '100%', height: '48px' }}
-                        >
-                            {dark ? <IconSun size={24} /> : <IconMoon size={24} />}
-                        </ActionIcon>
                     </Flex>
                 </ScrollArea>
             </Drawer>
