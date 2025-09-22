@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "about_me": "Sobre mim",
+    "my_projects": "Meus projetos",
+    "recommendations": "Recomendações",
+    "contact_me": "Contate-me"
+  },
+  "landing_page": {
+    "presentation": {
+      "title": "Gabriel Chaves",
+      "description": [
+        "Engenheiro de Software e Pesquisador no LIT-IFCE",
+        "Mais que um engenheiro.",
+        "Mais que um desenvolvedor.",
+        "Um artista em cada linha de código."
+      ]
+    },
+    "about_me": {
+      "title": "Sobre Mim",
+      "description": "Meu nome é Gabriel Chaves, nasci e me criei em Ceará, Fortaleza. Desde muito novo desenvolvi uma paixão por computação, paixão pela qual fez com que eu me aventurasse em vários meios, desde diagramação de websites até desenvolvimento de modelos de inteligência artificial complexas. Sou apaixonado pelo o que eu faço <3"
+    },
+    "projects": {
+      "title": "Meus Projetos"
+    },
+    "recommendations": {
+      "title": "Recomendações"
+    },
+    "contact": {
+      "title": "Fale Comigo",
+      "description": "Estou disponível para novos projetos e oportunidades. Sinta-se à vontade para entrar em contato comigo através das plataformas abaixo!"
+    }
+  }
+}

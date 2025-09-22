@@ -87,14 +87,7 @@ export default function LandingPagePresentation() {
                         {/* Animation escrita estilo maquina de escrever */}
                         <TypeAnimation
                             sequence={[
-                                'Software Engineer and Researcher at LIT-IFCE',
-                                1500,
-                                'More than an engineer.',
-                                1500,
-                                'More than a developer.',
-                                1500,
-                                'An artist in every line of code.',
-                                1500,
+                                'Software Engineer and Researcher at LIT-IFCE'
                             ]}
                             wrapper="span"
                             speed={30}
