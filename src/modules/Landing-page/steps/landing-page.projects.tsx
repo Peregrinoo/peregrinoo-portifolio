@@ -10,6 +10,18 @@ export default function LandingPageProjects() {
 
     const projects = [
         {
+            title: "SPV",
+            year: "2024 - 2025",
+            description: "Projeto de gestão de inversores com integração do firmware com o backend via comunicação MQTT. Desenvolvimento de interface moderna e responsiva para monitoramento em tempo real dos inversores.",
+            tags: ["NextJS", "Mantine-UI", "MQTT", "IoT"]
+        },
+        {
+            title: "H-TEC",
+            year: "2024 - 2025",
+            description: "Plataforma de empregos para recém-formados, facilitando a conexão entre empresas e novos talentos. Interface intuitiva e responsiva com funcionalidades de busca avançada e perfis personalizados.",
+            tags: ["NextJS", "Mantine-UI", "API REST"]
+        },
+        {
             title: "SGR",
             year: "2024 - 2025",
             description: "Sistema inovador para gestão e monitoramento de medidores de energia. Criação completa de frontend, backend e comunicação via LoRaWAN com microcontrolador, utilizando React e Chackra-UI no frontend e NestJS com arquitetura limpa no backend.",

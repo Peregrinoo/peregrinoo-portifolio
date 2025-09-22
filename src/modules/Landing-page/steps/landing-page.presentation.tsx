@@ -8,9 +8,10 @@ import {
     IconCode,
     IconServer,
     IconChevronDown,
+    IconBrain,
+    IconRobotFace,
 } from "@tabler/icons-react";
 import { useMantineColorScheme } from "@mantine/core";
-import { TypeAnimation } from 'react-type-animation';
 import '../styles/landing-page.style.css';
 export default function LandingPagePresentation() {
     const { colorScheme } = useMantineColorScheme();
@@ -20,6 +21,8 @@ export default function LandingPagePresentation() {
         { label: "Designer UI/UX", icon: IconPalette, color: "teal" },
         { label: "Frontend", icon: IconCode, color: "teal" },
         { label: "Backend", icon: IconServer, color: "teal" },
+        { label: "Machine Learning", icon: IconBrain, color: "teal" },
+        { label: "Deep Learning", icon: IconRobotFace, color: "teal" },
     ];
 
     return (
@@ -37,7 +40,7 @@ export default function LandingPagePresentation() {
                 flexDirection: "column"
             }}
         >
-            <Container style={{ maxWidth: 1200 }}>
+            <Container style={{ maxWidth: '100%' }}>
                 <Flex
                     direction={{ base: "column", md: "row" }}
                     align="center"
@@ -84,15 +87,8 @@ export default function LandingPagePresentation() {
                             Gabriel Chaves
                         </Title>
 
-                        {/* Animation escrita estilo maquina de escrever */}
-                        <TypeAnimation
-                            sequence={[
-                                'Software Engineer and Researcher at LIT-IFCE'
-                            ]}
-                            wrapper="span"
-                            speed={30}
-                            deletionSpeed={60}
-                            repeat={Infinity}
+                        {/* Static text replacing animation */}
+                        <span
                             style={{
                                 fontFamily: "var(--font-raleway), sans-serif",
                                 fontSize: "1rem",
@@ -100,7 +96,9 @@ export default function LandingPagePresentation() {
                                 marginTop: '0.5rem',
                                 display: "inline-block",
                             }}
-                        />
+                        >
+                            Engenheiro de software
+                        </span>
 
                         {/* Skills */}
                         <Flex gap="md" wrap="wrap" style={{ marginTop: '1rem' }}>
