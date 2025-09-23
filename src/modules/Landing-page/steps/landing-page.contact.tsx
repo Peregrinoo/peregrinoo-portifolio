@@ -11,6 +11,7 @@ export default function LandingPageContact() {
     return (
         <Paper style={{
             minHeight: "30vh",
+            width: '100vw',
             background: dark ? "#1A1B1E" : "#ffffff",
             padding: "2rem",
             transition: "background-color 0.3s ease",

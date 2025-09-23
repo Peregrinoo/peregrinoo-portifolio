@@ -56,6 +56,7 @@ export default function LandingPageProjects() {
     return (
         <Paper style={{
             minHeight: "40vh",
+            width: '100vw',
             background: dark ? "#1A1B1E" : "#ffffff",
             padding: "2rem",
             transition: "background-color 0.3s ease",
